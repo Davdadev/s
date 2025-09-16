@@ -339,7 +339,11 @@
                     this.sendButton.disabled = false;
                     this.chatInput.placeholder = "Type your message...";
                 } else {
-                    this.apiStatus.textContent = 'API Token';
+                    this.apiStatus.textContent = `Ready - Model: ${this.getModelDisplayName()}`;
+                    this.apiStatus.className = 'api-status configured';
+                    this.chatInput.disabled = false;
+                    this.sendButton.disabled = false;
+                    this.chatInput.placeholder = "Type your message...";
                 }
             }
             
