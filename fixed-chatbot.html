@@ -338,11 +338,7 @@
                     this.sendButton.disabled = false;
                     this.chatInput.placeholder = "Type your message...";
                 } else {
-                    this.apiStatus.textContent = 'API Token Required';
-                    this.apiStatus.className = 'api-status not-configured';
-                    this.chatInput.disabled = true;
-                    this.sendButton.disabled = true;
-                    this.chatInput.placeholder = "Enter API token first...";
+                    this.apiStatus.textContent = 'API Token';
                 }
             }
             
